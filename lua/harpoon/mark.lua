@@ -392,11 +392,9 @@ function M.toggle_file(file_name_or_buf_id)
 
     if mark_exists(buf_name) then
         M.rm_file(buf_name)
-        print("Mark removed")
         log.debug("toggle_file(): Mark removed")
     else
         M.add_file(buf_name)
-        print("Mark added")
         log.debug("toggle_file(): Mark added")
     end
 end
